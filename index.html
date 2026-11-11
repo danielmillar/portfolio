@@ -1,284 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Millar - Software Engineer Portfolio">
-    <meta name="author" content="Daniel Millar">
-    <title>Daniel Millar - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Millar</title>
+  <meta name="description" content="Software engineer in Scotland. Java and Kotlin, building with AI agents. Open to roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://danielmillar.dev/">
+  <meta property="og:title" content="Daniel Millar">
+  <meta property="og:description" content="Software engineer in Scotland. Java and Kotlin, building with AI agents. Open to roles.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <h1>Daniel Millar</h1>
+    <p>Software engineer in Scotland. Java and Kotlin, building with AI agents. Open to roles.</p>
+    <p>
+      <a href="https://github.com/danielmillar">github</a> ·
+      <a href="https://x.com/danielgmillar">x</a> ·
+      <a href="https://www.linkedin.com/in/danielgmillar/">linkedin</a> ·
+      <a href="mailto:contact@danielmillar.dev">email</a>
+    </p>
+  </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
-        <div class="container nav-inner">
-            <a class="nav-brand" href="#home">Daniel Millar</a>
-            <button
-                class="nav-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="site-menu"
-                aria-label="Open menu"
-            >
-                <span class="nav-toggle-bar" aria-hidden="true"></span>
-                <span class="nav-toggle-bar" aria-hidden="true"></span>
-            </button>
-            <ul id="site-menu" class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <main>
+    <section>
+      <h2>work</h2>
+      <ul>
+        <li>
+          Nevus Network
+          <span>Developer &amp; operator, 2022–2024. Built and ran a Minecraft server network with 100+ concurrent players: custom Java plugins, Linux servers, database-backed systems.</span>
+        </li>
+      </ul>
+    </section>
 
-    <main id="main">
-        <header id="home" class="hero">
-            <div class="container hero-inner">
-                <h1 class="hero-name">Daniel Millar</h1>
-                <p class="hero-role">Software Engineer</p>
-                <p class="hero-line">Engineering solutions to complex problems.</p>
-                <div class="hero-actions">
-                    <a class="btn" href="#projects">View projects</a>
-                    <a class="hero-secondary" href="#contact">Get in touch</a>
-                </div>
-            </div>
-        </header>
+    <section>
+      <h2>projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/danielmillar/VoiceWarden">VoiceWarden</a>
+          <span>Local speech-to-text moderation for Simple Voice Chat, no cloud.</span>
+        </li>
+        <li>
+          <a href="https://github.com/danielmillar/SlimeLink">SlimeLink</a>
+          <span>Create, load and save worlds from Skript on AdvancedSlimePaper. 230 downloads on <a href="https://modrinth.com/plugin/slimelink">Modrinth</a>.</span>
+        </li>
+        <li>
+          <a href="https://github.com/danielmillar/KwikMedical">KwikMedical</a>
+          <span>Emergency dispatch system, call intake to ambulance and hospital. Uni project.</span>
+        </li>
+      </ul>
+    </section>
 
-        <section id="about" class="section">
-            <div class="container narrow">
-                <h2>About</h2>
-                <p>I'm a back-end focused software engineer who enjoys solving complex engineering challenges. I'm particularly interested in scalable systems and software that has to perform reliably under real-world load. The kinds of engineering problems tackled by companies like SpaceX and Tesla are exactly the sort of challenges that motivate me.</p>
-                <p>I primarily build with Java and Kotlin, alongside TypeScript and the rest of my backend tooling. I like writing code that's clean and efficient, the kind that makes sense when you revisit it months later. I'm always looking to deepen my knowledge of distributed systems and scalable backend architecture.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="section section-alt">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-list">
-                    <article class="project">
-                        <div class="project-media">
-                            <img src="images/SlimeBlock.webp" alt="SlimeLink project artwork" width="320" height="200">
-                        </div>
-                        <div class="project-body">
-                            <div class="project-heading">
-                                <h3>SlimeLink</h3>
-                                <span class="status status-active">Active Development</span>
-                            </div>
-                            <p>A modern Skript addon for seamless interaction with AdvancedSlimePaper. Provides clean and intuitive syntax to easily create, load, save, and delete worlds directly from Skript.</p>
-                            <p class="tech-stack">Kotlin · Java · Gradle · AdvancedSlimePaper API</p>
-                            <div class="project-actions">
-                                <button type="button" class="btn" data-modal="slimeLinkModal">View Project</button>
-                                <a class="icon-link" href="https://github.com/danielmillar/SlimeLink" target="_blank" rel="noopener noreferrer" aria-label="View SlimeLink on GitHub">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project">
-                        <div class="project-media project-media-placeholder" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-heading">
-                                <h3>KwikMedical</h3>
-                                <span class="status status-academic">Academic Project</span>
-                            </div>
-                            <p>Emergency medical services system designed with Service Oriented Architecture. Streamlines the entire emergency response workflow from call intake through ambulance dispatch to hospital coordination.</p>
-                            <p class="tech-stack">Kotlin · Ktor · TypeScript · React · React Native · WebSockets · H2 Database</p>
-                            <div class="project-actions">
-                                <button type="button" class="btn" data-modal="kwikMedicalModal">View Project</button>
-                                <a class="icon-link" href="https://github.com/danielmillar/KwikMedical" target="_blank" rel="noopener noreferrer" aria-label="View KwikMedical on GitHub">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="experiences" class="section">
-            <div class="container">
-                <h2>Experiences</h2>
-                <article class="experience">
-                    <h3>Production Systems Operator - Minecraft Server Network</h3>
-                    <p>Built and operated a production Minecraft server network supporting over 100 concurrent players, developing custom Java plugins, managing Linux infrastructure, designing database-backed systems and maintaining 99.9% uptime.</p>
-                    <ul class="experience-highlights">
-                        <li>Custom Plugin Development</li>
-                        <li>Real-time Performance Optimization</li>
-                        <li>Active Community Management</li>
-                    </ul>
-                    <button type="button" class="btn" data-modal="minecraftModal">Learn More</button>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills" class="section section-alt">
-            <div class="container">
-                <h2>Skills &amp; Technologies</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3>Languages</h3>
-                        <ul class="skill-list">
-                            <li>Kotlin</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Tools &amp; Platforms</h3>
-                        <ul class="skill-list">
-                            <li>IntelliJ IDEA</li>
-                            <li>VS Code</li>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Gradle</li>
-                            <li>Node.js</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Databases &amp; Systems</h3>
-                        <ul class="skill-list">
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                            <li>Windows</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education</h2>
-                <ol class="education-list">
-                    <li class="education-item">
-                        <h3>BEng (Hons) Software Engineering</h3>
-                        <p class="education-meta">
-                            <span class="education-school">Edinburgh Napier University</span>
-                            <span class="education-date">Sept 2021 - June 2025 · First Class Honours</span>
-                        </p>
-                        <p class="education-modules-label">Key Modules</p>
-                        <ul class="module-list">
-                            <li>Agile Project Management</li>
-                            <li>Software Architecture</li>
-                            <li>Artificial Intelligence</li>
-                            <li>Concurrent &amp; Parallel Systems</li>
-                            <li>Secure Software Development</li>
-                            <li>Multi-Agent Systems</li>
-                            <li>Advanced Database Systems</li>
-                            <li>Data Analytics</li>
-                        </ul>
-                    </li>
-                    <li class="education-item">
-                        <h3>HND Software Engineering with Emerging Technologies</h3>
-                        <p class="education-meta">
-                            <span class="education-school">Glasgow Clyde College</span>
-                            <span class="education-date">Sept 2019 - June 2021 · Grade A</span>
-                        </p>
-                        <p class="education-modules-label">Key Modules</p>
-                        <ul class="module-list">
-                            <li>Object-Oriented Programming &amp; Design</li>
-                            <li>Data Structures</li>
-                            <li>Web Development</li>
-                            <li>Software Security</li>
-                            <li>Emerging Technologies</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section id="contact" class="section section-alt">
-            <div class="container narrow">
-                <h2>Contact</h2>
-                <p>Feel free to reach out if you'd like to work together or just ask a question.</p>
-                <ul class="contact-links">
-                    <li><a href="mailto:contact@danielmillar.dev">contact@danielmillar.dev</a></li>
-                    <li><a href="https://github.com/danielmillar" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/danielgmillar/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <div id="minecraftModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="minecraftModalTitle" hidden>
-        <div class="modal-panel">
-            <button type="button" class="modal-close" data-close aria-label="Close dialog">&times;</button>
-            <h3 id="minecraftModalTitle">Production Systems Operator - Minecraft Server Network</h3>
-            <div class="modal-body">
-                <p><strong>Overview:</strong> Built and operated a production Minecraft server network supporting over 100 concurrent players, with custom Java plugins, Linux infrastructure, database-backed systems and 99.9% uptime.</p>
-                <p><strong>Technical Infrastructure:</strong></p>
-                <ul>
-                    <li>Architected and maintained Linux-based server infrastructure on dedicated hardware</li>
-                    <li>Implemented MySQL database for persistent player data, economy, and progression tracking</li>
-                    <li>Optimized Java application performance and memory management for high concurrent load</li>
-                    <li>Configured automated backup systems and disaster recovery procedures</li>
-                </ul>
-                <p><strong>Software Development:</strong></p>
-                <ul>
-                    <li>Developed custom plugins in Java using Bukkit/Spigot API for game mechanics and features</li>
-                    <li>Built RESTful API integration for web dashboard and player statistics</li>
-                    <li>Implemented real-time event systems and asynchronous task processing</li>
-                    <li>Created custom economy system with transaction handling and data persistence</li>
-                </ul>
-                <p><strong>Key Skills:</strong> Linux server administration, Java development, database design and optimization, real-time systems, community management, handling production traffic at scale</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="slimeLinkModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="slimeLinkModalTitle" hidden>
-        <div class="modal-panel">
-            <button type="button" class="modal-close" data-close aria-label="Close dialog">&times;</button>
-            <h3 id="slimeLinkModalTitle">SlimeLink</h3>
-            <div class="modal-body">
-                <p><strong>Overview:</strong> A modern Skript addon for seamless interaction with AdvancedSlimePaper. Provides clean and intuitive syntax to easily create, load, save, and delete worlds directly from Skript.</p>
-                <p><strong>Key Features:</strong></p>
-                <ul>
-                    <li>Seamless integration with AdvancedSlimePaper API</li>
-                    <li>Intuitive syntax for world management</li>
-                    <li>Efficient world loading and saving</li>
-                </ul>
-                <p><strong>Tech Stack:</strong> Kotlin, Java, Gradle, AdvancedSlimePaper API</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="kwikMedicalModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="kwikMedicalModalTitle" hidden>
-        <div class="modal-panel">
-            <button type="button" class="modal-close" data-close aria-label="Close dialog">&times;</button>
-            <h3 id="kwikMedicalModalTitle">KwikMedical</h3>
-            <div class="modal-body">
-                <p><strong>Overview:</strong> Emergency medical services system designed with Service Oriented Architecture. Streamlines the entire emergency response workflow from call intake through ambulance dispatch to hospital coordination, with real-time communication via WebSockets.</p>
-                <p><strong>Key Components:</strong></p>
-                <ul>
-                    <li>Real-time communication using WebSockets</li>
-                    <li>Service Oriented Architecture (SOA) design</li>
-                    <li>Cross-platform support (Web &amp; Mobile)</li>
-                </ul>
-                <p><strong>Tech Stack:</strong> Kotlin, Ktor, TypeScript, React, React Native, WebSockets, H2 Database</p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Daniel Millar</p>
-        </div>
-    </footer>
-
-    <script src="script.js" defer></script>
+    <section>
+      <h2>education</h2>
+      <ul>
+        <li>
+          BEng (Hons) Software Engineering
+          <span>Edinburgh Napier University, First Class, 2025</span>
+        </li>
+        <li>
+          HND Software Engineering
+          <span>Glasgow Clyde College, Grade A, 2021</span>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
